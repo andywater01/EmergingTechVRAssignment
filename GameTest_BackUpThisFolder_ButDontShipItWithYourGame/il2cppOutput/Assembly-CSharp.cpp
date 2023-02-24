@@ -373,6 +373,8 @@ struct Dropdown_t54C0BDC1441E058BE37E796F68886671C270EF89;
 struct FadeCanvas_t651A2BE9D9455AF05EA99C50D7694C2FF113639D;
 // FadeCanvasOnOverlap
 struct FadeCanvasOnOverlap_t9821A45233595372F63E340F1F481024181857EA;
+// FlickerEffect
+struct FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C;
 // UnityEngine.UI.FontData
 struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
 // UnityEngine.GameObject
@@ -677,6 +679,8 @@ struct U3CFadeInU3Ed__13_t9A72277C7889640354F881A8C356279632889D9E;
 struct U3CFadeOutU3Ed__14_tD738A19FEFDC41D9D5231D0E6BEEF7F980C99B69;
 // FadeCanvasOnOverlap/ValueChangeEvent
 struct ValueChangeEvent_t9759D8E8DF96BD14F8863A67F13E415FD9378F93;
+// FlickerEffect/<FlickerLight>d__7
+struct U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 // OnCollision/CollisionEvent
@@ -730,6 +734,7 @@ IL2CPP_EXTERN_C RuntimeClass* TiltEvent_tE7CA2C072A0C8305A34D01A5ABD23E9F7573B22
 IL2CPP_EXTERN_C RuntimeClass* TriggerEvent_tB92A1BCF4D251345FE0E2C7F2A48896008514747_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CFadeInU3Ed__13_t9A72277C7889640354F881A8C356279632889D9E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CFadeOutU3Ed__14_tD738A19FEFDC41D9D5231D0E6BEEF7F980C99B69_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CIntervalRoutineU3Ed__4_tA3570B952856DA279856407F8AD1DC976C452F5E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CShowFPSU3Ed__11_tFD6B6D1317E74BEAD28821416C089DD169A4F87E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_t004E838882A666E66702D0EC5DEA62C3733839C4_il2cpp_TypeInfo_var;
@@ -817,6 +822,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* TeleportAreaWithFade_FadeSequence_TisSelect
 IL2CPP_EXTERN_C const RuntimeMethod* TeleportAreaWithFade_FadeSequence_TisSelectExitEventArgs_t56125CE0360D37AC0B50EB6066B5AB5957EF559A_mC78D0C1265F7DB748F7E998491B5B29B6719C520_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CFadeInU3Ed__13_System_Collections_IEnumerator_Reset_m8C8EA60D28D9085E1CDD627D7DD3D42E654F3250_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CFadeOutU3Ed__14_System_Collections_IEnumerator_Reset_m6B4836A7F39729C5718A0E79CDC7C85D463C4AE9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CFlickerLightU3Ed__7_System_Collections_IEnumerator_Reset_m8FCC41E1FF9DE05AE169B0032B5F762D928EB0F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CIntervalRoutineU3Ed__4_System_Collections_IEnumerator_Reset_m4702AD573AD86829528B673CD8297445BB7B8CF3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CShowFPSU3Ed__11_System_Collections_IEnumerator_Reset_m1E65B77CB5AFAF445C8E92C943451924C551F97E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_m05144EB9F3BFA975DF4C33D66491674CFDF53722_RuntimeMethod_var;
@@ -1057,6 +1063,17 @@ struct U3CFadeOutU3Ed__14_tD738A19FEFDC41D9D5231D0E6BEEF7F980C99B69  : public Ru
 	float ___duration_3;
 	// System.Single FadeCanvas/<FadeOut>d__14::<elapsedTime>5__2
 	float ___U3CelapsedTimeU3E5__2_4;
+};
+
+// FlickerEffect/<FlickerLight>d__7
+struct U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B  : public RuntimeObject
+{
+	// System.Int32 FlickerEffect/<FlickerLight>d__7::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object FlickerEffect/<FlickerLight>d__7::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// FlickerEffect FlickerEffect/<FlickerLight>d__7::<>4__this
+	FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* ___U3CU3E4__this_2;
 };
 
 // OnTimedInterval/<IntervalRoutine>d__4
@@ -3078,6 +3095,19 @@ struct FadeCanvasOnOverlap_t9821A45233595372F63E340F1F481024181857EA  : public M
 	ValueChangeEvent_t9759D8E8DF96BD14F8863A67F13E415FD9378F93* ___OnValueChange_6;
 };
 
+// FlickerEffect
+struct FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Light FlickerEffect::lantern
+	Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___lantern_4;
+	// System.Single FlickerEffect::timer
+	float ___timer_5;
+	// System.Single FlickerEffect::randomTime
+	float ___randomTime_6;
+	// UnityEngine.AudioSource FlickerEffect::buzzing
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___buzzing_7;
+};
+
 // HeartRate
 struct HeartRate_tA45F27483C88953FA66B9C75EFF3588DC33DB4E3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4978,6 +5008,10 @@ struct String_t_StaticFields
 
 // FadeCanvas/<FadeOut>d__14
 
+// FlickerEffect/<FlickerLight>d__7
+
+// FlickerEffect/<FlickerLight>d__7
+
 // OnTimedInterval/<IntervalRoutine>d__4
 
 // OnTimedInterval/<IntervalRoutine>d__4
@@ -5653,6 +5687,10 @@ struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_StaticFields
 
 // FadeCanvasOnOverlap
 
+// FlickerEffect
+
+// FlickerEffect
+
 // HeartRate
 
 // HeartRate
@@ -6314,6 +6352,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void FlickerEffect::TimeRand()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FlickerEffect_TimeRand_m17038190FE29DF4CC32EA294F63EF47C6C59170E (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Time::get_deltaTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+// System.Collections.IEnumerator FlickerEffect::FlickerLight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FlickerEffect_FlickerLight_mEA04CF6B7DA30986CDA5E72B1AFBD7F6CDF6BE8D (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) ;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.Light>()
+inline Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Random::Range(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
+// System.Void FlickerEffect/<FlickerLight>d__7::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlickerLightU3Ed__7__ctor_mD76032506689FD9FD7308D05557F51C67EED6BCA (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AudioSource::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+// System.Void System.NotSupportedException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Int32 System.Int32::Parse(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0 (String_t* ___0_s, const RuntimeMethod* method) ;
 // System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
@@ -6405,8 +6470,6 @@ inline CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* Component_GetCompo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopAllCoroutines_m872033451D42013A99867D09337490017E9ED318 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator FadeCanvas::FadeIn(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FadeCanvas_FadeIn_m81AFFB3D7884B1CF7DE8388961E8B826C4C20170 (FadeCanvas_t651A2BE9D9455AF05EA99C50D7694C2FF113639D* __this, float ___0_duration, const RuntimeMethod* method) ;
-// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 // System.Void FadeCanvas::set_CurrentRoutine(UnityEngine.Coroutine)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FadeCanvas_set_CurrentRoutine_m27241B5B956B0E4C67D7E939C5D523AFB3A9B780_inline (FadeCanvas_t651A2BE9D9455AF05EA99C50D7694C2FF113639D* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_value, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator FadeCanvas::FadeOut(System.Single)
@@ -6417,14 +6480,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFadeInU3Ed__13__ctor_mB46FA71E7829A3E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFadeOutU3Ed__14__ctor_m54EC2481B8DC3171E0DF898C9C862CF45C84ACB0 (U3CFadeOutU3Ed__14_tD738A19FEFDC41D9D5231D0E6BEEF7F980C99B69* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void UnityEngine.CanvasGroup::set_alpha(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CanvasGroup_set_alpha_m5C06839316D948BB4F75ED72C87FA1F1A20C333F (CanvasGroup_t048C1461B14628CFAEBE6E7353093ADB04EBC094* __this, float ___0_value, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void FadeCanvas::SetAlpha(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FadeCanvas_SetAlpha_mCA35CC5EBE735C0A4953627E6EFC70855CD8A647 (FadeCanvas_t651A2BE9D9455AF05EA99C50D7694C2FF113639D* __this, float ___0_value, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Time::get_deltaTime()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
-// System.Void System.NotSupportedException::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Void FadeCanvasOnOverlap::CheckOverlap()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FadeCanvasOnOverlap_CheckOverlap_mF4D02F5AD241B6D93C200B15DB67D82EEE8D9423 (FadeCanvasOnOverlap_t9821A45233595372F63E340F1F481024181857EA* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.LayerMask::op_Implicit(UnityEngine.LayerMask)
@@ -6577,8 +6634,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_volume_mD902BBDBBDE0E3C1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayContinuousSound_Play_m99DB632976F663760E285DA8A0E838288F2BFE77 (PlayContinuousSound_t9A0BAFD07E1BADD94EFF90449FD653BFFC90E9DF* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_clip_mFF441895E274286C88D9C75ED5CA1B1B39528D70 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityEngine.AudioSource::Play()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::Pause()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Pause_m2C2A09359E8AA924FEADECC1AFEA519B3C915B26 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
@@ -6595,8 +6650,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioSource_get_isPlaying_mC203303F2F714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_playOnAwake_m7EACC6ECEF12D7BA86A4E5A53603F1C8F9E11949 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_loop_m834A590939D8456008C0F897FD80B0ECFFB7FE56 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, bool ___0_value, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Random::Range(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::set_pitch(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_pitch_mD14631FC99BF38AAFB356D9C45546BC16CF9E811 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, float ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
@@ -6709,11 +6762,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetInteractionLayer_SetTargetLayer_mC501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetInteractionLayer_SetOriginalLayer_mF7F6ECEDA3D168A4B251209BE3B4AEEEC67E9664 (SetInteractionLayer_t5E00392265D7B35E14F5BA8448FF93D8FC6E58C5* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask::op_Implicit(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InteractionLayerMask_t3B3480A4A5E1E0C43314C0D2CEB3BB39175E1FD4 InteractionLayerMask_op_Implicit_m6FF8E1165F1A46181E485809C17FF45A3B0C00BA (int32_t ___0_intVal, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<UnityEngine.Light>()
-inline Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
-{
-	return ((  Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
-}
 // System.Void UnityEngine.Light::set_color(UnityEngine.Color)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Light::get_color()
@@ -6801,8 +6849,6 @@ inline Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* Component_GetComponent_
 {
 	return ((  Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
-// System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Behaviour::get_enabled()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1 (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.ParticleSystem::Play()
@@ -6946,8 +6992,6 @@ inline void UnityEvent_1__ctor_mDD85D3BD5692606F4DA08AEF04F83FD152CEA678 (UnityE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OnTimedInterval_IntervalRoutine_m53C4319DFCC398662538160284872A1483072625 (OnTimedInterval_tB9083D892D6C8ED72DAAAED27CD8EE68547F96EA* __this, const RuntimeMethod* method) ;
 // System.Void OnTimedInterval/<IntervalRoutine>d__4::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntervalRoutineU3Ed__4__ctor_m1DC3EEBE3646702DC9E11E82465B60D377E9DE28 (U3CIntervalRoutineU3Ed__4_tA3570B952856DA279856407F8AD1DC976C452F5E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-// System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
 // System.Void OnTimedInterval::PlayEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnTimedInterval_PlayEvent_mA6AB605C28CD8B2BE2A61DD905C8AF6C4099D2E3 (OnTimedInterval_tB9083D892D6C8ED72DAAAED27CD8EE68547F96EA* __this, const RuntimeMethod* method) ;
 // System.Boolean OnTrigger::CanTrigger(UnityEngine.GameObject)
@@ -7361,6 +7405,291 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void checkHandRotation__ctor_mA209D6FF31075A6
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void FlickerEffect::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FlickerEffect_Start_m7851349D544F4C409997A322CFECB24576BE1458 (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) 
+{
+	{
+		// TimeRand();
+		FlickerEffect_TimeRand_m17038190FE29DF4CC32EA294F63EF47C6C59170E(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void FlickerEffect::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FlickerEffect_Update_m429DF5B24BD559D8ABD9E2A0D9F1CC6586590F7E (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// timer += Time.deltaTime;
+		float L_0 = __this->___timer_5;
+		float L_1;
+		L_1 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___timer_5 = ((float)il2cpp_codegen_add(L_0, L_1));
+		// if (timer >= randomTime)
+		float L_2 = __this->___timer_5;
+		float L_3 = __this->___randomTime_6;
+		if ((!(((float)L_2) >= ((float)L_3))))
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		// StartCoroutine(FlickerLight());
+		RuntimeObject* L_4;
+		L_4 = FlickerEffect_FlickerLight_mEA04CF6B7DA30986CDA5E72B1AFBD7F6CDF6BE8D(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
+		return;
+	}
+
+IL_002e:
+	{
+		// else if (timer > 4.5 && timer < 5f)
+		float L_6 = __this->___timer_5;
+		if ((!(((double)((double)L_6)) > ((double)(4.5)))))
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		float L_7 = __this->___timer_5;
+		if ((!(((float)L_7) < ((float)(5.0f)))))
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		// lantern.GetComponent<Light>().enabled = true;
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_8 = __this->___lantern_4;
+		NullCheck(L_8);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_9;
+		L_9 = Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9(L_8, Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9_RuntimeMethod_var);
+		NullCheck(L_9);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_9, (bool)1, NULL);
+	}
+
+IL_005e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void FlickerEffect::TimeRand()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FlickerEffect_TimeRand_m17038190FE29DF4CC32EA294F63EF47C6C59170E (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) 
+{
+	{
+		// randomTime = Random.Range(8f, 25f);
+		float L_0;
+		L_0 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((8.0f), (25.0f), NULL);
+		__this->___randomTime_6 = L_0;
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator FlickerEffect::FlickerLight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FlickerEffect_FlickerLight_mEA04CF6B7DA30986CDA5E72B1AFBD7F6CDF6BE8D (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* L_0 = (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B*)il2cpp_codegen_object_new(U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CFlickerLightU3Ed__7__ctor_mD76032506689FD9FD7308D05557F51C67EED6BCA(L_0, 0, NULL);
+		U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		return L_1;
+	}
+}
+// System.Void FlickerEffect::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FlickerEffect__ctor_mC9C700F2E436AE603FD4754DA8EEC3AA0EA4D950 (FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void FlickerEffect/<FlickerLight>d__7::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlickerLightU3Ed__7__ctor_mD76032506689FD9FD7308D05557F51C67EED6BCA (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void FlickerEffect/<FlickerLight>d__7::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlickerLightU3Ed__7_System_IDisposable_Dispose_m3CF6DB2AD1D356C402B813615F9BFE91B87997AB (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean FlickerEffect/<FlickerLight>d__7::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFlickerLightU3Ed__7_MoveNext_mE0F909803AD22DEB48500EDBE2F650C928660858 (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_0022;
+			}
+			case 1:
+			{
+				goto IL_005e;
+			}
+			case 2:
+			{
+				goto IL_008f;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0022:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// buzzing.Play();
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_3 = V_1;
+		NullCheck(L_3);
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_4 = L_3->___buzzing_7;
+		NullCheck(L_4);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_4, NULL);
+		// lantern.GetComponent<Light>().enabled = false;
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_5 = V_1;
+		NullCheck(L_5);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_6 = L_5->___lantern_4;
+		NullCheck(L_6);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_7;
+		L_7 = Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9(L_6, Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9_RuntimeMethod_var);
+		NullCheck(L_7);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_7, (bool)0, NULL);
+		// yield return new WaitForSeconds(0.5f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_8 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_8, (0.5f), NULL);
+		__this->___U3CU3E2__current_1 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_8);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_005e:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// lantern.GetComponent<Light>().enabled = true;
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_9 = V_1;
+		NullCheck(L_9);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_10 = L_9->___lantern_4;
+		NullCheck(L_10);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_11;
+		L_11 = Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9(L_10, Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9_RuntimeMethod_var);
+		NullCheck(L_11);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_11, (bool)1, NULL);
+		// yield return new WaitForSeconds(0.5f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_12 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_12, (0.5f), NULL);
+		__this->___U3CU3E2__current_1 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_12);
+		__this->___U3CU3E1__state_0 = 2;
+		return (bool)1;
+	}
+
+IL_008f:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// lantern.GetComponent<Light>().enabled = false;
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_13 = V_1;
+		NullCheck(L_13);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_14 = L_13->___lantern_4;
+		NullCheck(L_14);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_15;
+		L_15 = Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9(L_14, Component_GetComponent_TisLight_t1E68479B7782AF2050FAA02A5DC612FD034F18F3_mF4816FA12B6F220CA55D47D669D7E50DC118B9E9_RuntimeMethod_var);
+		NullCheck(L_15);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_15, (bool)0, NULL);
+		// TimeRand();
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_16 = V_1;
+		NullCheck(L_16);
+		FlickerEffect_TimeRand_m17038190FE29DF4CC32EA294F63EF47C6C59170E(L_16, NULL);
+		// timer = 0.0f;
+		FlickerEffect_t68D2178DE6E6B5FF0A6574505871B5DE1A35F77C* L_17 = V_1;
+		NullCheck(L_17);
+		L_17->___timer_5 = (0.0f);
+		// }
+		return (bool)0;
+	}
+}
+// System.Object FlickerEffect/<FlickerLight>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlickerLightU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4F31699BD5FC30E29FF7F0C2DDA1F57E56ECCC60 (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void FlickerEffect/<FlickerLight>d__7::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlickerLightU3Ed__7_System_Collections_IEnumerator_Reset_m8FCC41E1FF9DE05AE169B0032B5F762D928EB0F7 (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFlickerLightU3Ed__7_System_Collections_IEnumerator_Reset_m8FCC41E1FF9DE05AE169B0032B5F762D928EB0F7_RuntimeMethod_var)));
+	}
+}
+// System.Object FlickerEffect/<FlickerLight>d__7::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlickerLightU3Ed__7_System_Collections_IEnumerator_get_Current_mAE4AC969405A6BD320E7D5CAE0A03158B06671AC (U3CFlickerLightU3Ed__7_t0E86FE0D8DA61894EA17EFA62CAEDAB35252916B* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
 	}
 }
 #ifdef __clang__

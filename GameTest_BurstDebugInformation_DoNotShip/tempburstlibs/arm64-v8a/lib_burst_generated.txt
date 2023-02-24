@@ -134,6 +134,7 @@ Library: C:\Users\Andy\Documents\GitHubProjects\VRRoom\Temp\StagingArea\tempburs
 --compilation-defines=ENABLE_BURST_1_0_0_OR_NEWER
 --compilation-defines=USING_ANIMATION_MODULE
 --compilation-defines=USING_PHYSICS2D_MODULE
+--compilation-defines=UNIVERSAL_1_0_0_OR_NEWER
 --compilation-defines=PACKAGE_INPUT_SYSTEM_EXISTS
 --compilation-defines=PACKAGE_INPUT_SYSTEM_1_2_0_OR_NEWER_EXISTS
 --compilation-defines=MODULE_AI_EXISTS
@@ -151,7 +152,6 @@ Library: C:\Users\Andy\Documents\GitHubProjects\VRRoom\Temp\StagingArea\tempburs
 --compilation-defines=INPUT_SYSTEM_POSE_VALID
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=ENABLE_URP
---compilation-defines=UNIVERSAL_1_0_0_OR_NEWER
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Andy\Documents\GitHubProjects\VRRoom\Temp\Burst
 --output=C:\Users\Andy\Documents\GitHubProjects\VRRoom\Temp\StagingArea\tempburstlibs\arm64-v8a\lib_burst_generated
