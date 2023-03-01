@@ -2160,7 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbcf6bd38fc4ca24c94138e11634e748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartrate: {fileID: 0}
+  heartrate: {fileID: 1767427288}
 --- !u!4 &1011004278
 Transform:
   m_ObjectHideFlags: 0
